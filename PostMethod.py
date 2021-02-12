@@ -26,3 +26,4 @@ delete_book = requests.post("http://216.10.245.166/Library/DeleteBook.php", json
 print(delete_book.json())
 # print(delete_book.text)
 assert "successfully" in delete_book.text
+print("Done")
