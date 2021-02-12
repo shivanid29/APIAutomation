@@ -5,7 +5,8 @@ from utilitiestest.urldetails import *
 from utilitiestest.Resources import *
 from utilitiestest.payloadtest import *
 
-adding_book = requests.post(NeededUrl() + Actiontobetaken.Add_Books, json=Payload_AddBook(), headers={"Content-Type": "application/json"})
+url = Configurationtest()['API']['end_point']
+adding_book = requests.post(url + Actiontobetaken.Add_Books, json=Payload_AddBook(), headers={"Content-Type": "application/json"})
 
 print(adding_book)
 print(adding_book.json())

@@ -1,8 +1,8 @@
-def Payload_AddBook():
+def Payload_AddBook(isbn,aisle):
     body = {
         "name": "Learn Appium Automation with Java",
-        "isbn": "checkng",
-        "aisle": "358",
+        "isbn": isbn,
+        "aisle": aisle,
         "author": "John testing"
     }
     return body
